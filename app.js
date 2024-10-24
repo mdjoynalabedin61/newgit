@@ -12,12 +12,7 @@ const unions = require('./unions.json');
 
 
 // Middleware to serve static files
-<<<<<<< HEAD
-app.use(express.static(path.join(__dirname, 'index.html')));
-=======
 app.use(express.static(path.join(__dirname, 'public')));
->>>>>>> 7ca436b (আপনার কমেন্ট বার্তা)
-
 
 
 // Rate limiter middleware
