@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- Apple icon -->
+    <link rel="apple-touch-icon" href="favicon32.png">
+    <link rel="apple-touch-icon" href="favicon32.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon180.png">
+<link rel="apple-touch-icon" sizes="167x167" href="favicon167">
+<link rel="icon" href="favicon167.png" type="image/png">
+<meta name="apple-mobile-web-app-title" content="SohojApi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+ <!-- Apple icon -->
+ <!-- Splash start -->
+ <link rel="apple-touch-startup-image" href="favicon512.png">
+ <!-- splash end -->
+ <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Sohoj API: The Easy Bangladesh Location API</title>
+
+    <meta name="description" content="Sohoj API provides a simple and efficient way to retrieve administrative divisions, districts, upazilas, and unions of Bangladesh. Designed for developers seeking an easy-to-use interface, Sohoj API delivers accurate location data with minimal effort. Perfect for applications requiring Bangladesh's geographic hierarchy.">
+    <meta name="keywords" content="SohojApi, Sohoj Api, Api Sohoj, সহজ এপিআই,conditional-form,Conditional form bd,Divisions Districts Upzila Unions conditional form">
+    <link rel="canonical" href="https://sohojapi.vercel.app" />
+<meta name="author" content="Mohammad Joynal Abedin">
+<meta name="robots" content="index, follow">
+    <!-- Facebook Open tags start here -->
+<meta property="og:title" content="Sohoj API: The Easy Bangladesh Location API" />
+<meta property="og:description" content="Sohoj API provides a simple and efficient way to retrieve administrative divisions, districts, upazilas, and unions of Bangladesh. Designed for developers seeking an easy-to-use interface, Sohoj API delivers accurate location data with minimal effort. Perfect for applications requiring Bangladesh's geographic hierarchy." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="SohojApi" />
+<meta property="article:author" content="https://www.facebook.com/joynal.abedin.9987" />
+<meta property="og:url" content="https://www.sohojapi.vercel.app" />
+<meta property="og:image" content="https://www.sohojapi.vercel.app/openmetatag.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<!-- Facebook Open tag end here -->
+<!-- Twitter Open tags start here -->
+<meta name="twitter:card" content="Sohoj API: The Easy Bangladesh Location API">
+<meta name="twitter:title" content="Sohoj API: The Easy Bangladesh Location API
+">
+<meta name="twitter:description" content="Sohoj API provides a simple and efficient way to retrieve administrative divisions, districts, upazilas, and unions of Bangladesh. Designed for developers seeking an easy-to-use interface, Sohoj API delivers accurate location data with minimal effort. Perfect for applications requiring Bangladesh's geographic hierarchy.">
+<meta name="twitter:image" content="https://www.sohojapi.vercel.com/openmetatag.jpg">
+
+
+<!-- Twitter open tags end here -->
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <!-- Clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+</head>
+<body>
+    <div class="divContainer">
+        
+
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="sohojapi-logo.png" alt="Logo">
+        </div>
+        <div class="hamburger" id="hamburger">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+    </nav>
+    
+    <div class="navbar-content" id="navbarContent">
+        <ul>
+            <li><a href="index.html">হোমপেইজ</a></li>
+            <li><a href="profile.html">ডেভলপার</a></li>
+            <li><a href="demo.html" class="demobar"style="color:white">ডেমো/নমুনা</a></li>
+        </ul>
+    </div>
+
+<div class="bannerbg">
+    
+</div>
+
+
+
+
+
+
+    <div class="container">
+        <div class="header">
+            <h1>নির্দেশিকা</h1>
+        </div>
+        <div class="content">
+            <h2>অনলাইনে বিভাগ, জেলা, উপজেলা, ইউনিয়নে ড্রপডাউন এর এপিআই ব্যবহারের নিয়ম বা প্রদ্ধতিঃ</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>১. পোর্টাল লিংক</h3>
+                    <p>যে কোন কম্পিউটার অথবা মোবাইল ব্রাউজার থেকে <a href="https://sohojapi.vercel.app ">https://sohojapi.vercel.app</a> লিংকে ক্লিক করলেই সহজ এ.পি.আই'এর পৃষ্ঠা লোড হবে। পোর্টাল লোড হওয়ার পর আপনার স্ক্রিনে ওয়েব পেজের প্রথম/হোমপেইজে নির্দেশনা'তে এ.পি.আই ব্যবহারের নিয়মাবলী পাবেন।</p>
+                </div>
+                <div class="step">
+                    <h3>২. Division বা বিভাগের এ.পি.আই । </h3>
+                    <div class="divlink">
+                        <input type="text" value="  https://sohojapi.vercel.app/api/divisions       " id="link1" readonly="true">
+                        <button id="copyBtn1">Copy</button>
+                    </div>
+                    <p>এরপর,উপরের বিভাগের এপিআই'টি কপি করে,api end-point হিসেবে ব্যবহার করতে পারেন। যেখানে সকল বিভাগ রয়েছে। এবং জেসন এর ধরণ নিম্নরুপঃ</p>
+                    <div class="code-container">
+    <div class="code-header">
+        <span>JSON Data</span>
+        <button class="copy-button" data-clipboard-target="#json-code">Copy</button>
+    </div>
+    <div class="code-box">
+        <pre><code id="json-code" class="json">
+[{
+    "id":"1","name":"Chattagram","bn_name":"চট্টগ্রাম"
+}]
+
+</code></pre>
+    </div>
+</div>
+                </div>
+                <div class="step">
+                    <h3>৩. Districts বা জেলা এ.পি.আই</h3>
+            <div class="divlink">
+                        <input type="text" value="  https://sohojapi.vercel.app/api/districts       " id="link2" readonly="true">
+                        <button id="copyBtn2">Copy</button>
+                    </div>
+                    <p>তারপর, বাংলাদেশের সকল জেলা সংশ্লিষ্ট এপিআই পেতে উপরের জেলা এপিআই ইন্ডপয়েন্ট লিংক'টি কপি করুন। অতঃপর তা প্রয়োজনীয় ড্রপডাউন মেনুতে ব্যবহার করুন ।  </p>
+                </div>
+                <div class="step">
+                    <h3>৪. Upzilas বা উপজেলা'র এ.পি.আই</h3>
+                        <div class="divlink">
+                        <input type="text" value="  https://sohojapi.vercel.app/api/upzilas       " id="link3" readonly="true">
+                        <button id="copyBtn3">Copy</button>
+                    </div>
+                    <p> তারপর বাংলাদেশের সকল উপজেলা সংশ্লিষ্ট এপিআই পেতে উপরের জেলা এপিআই ইন্ডপয়েন্ট লিংক'টি কপি করুন। এবং তা প্রয়োজনানুসারে ড্রপডাউন লিংক এপিআই হিসেবে ব্যবহার করুন। </p>
+                </div>
+                <div class="step">
+                    <h3>৫. Union বা ইউনিয়নের এ.পি.আই</h3>
+                     <div class="divlink">
+                        <input type="text" value="  https://sohojapi.vercel.app/api/unions       " id="link4" readonly="true">
+                        <button id="copyBtn4">Copy</button>
+                    </div>
+                    <p>তারপর বাংলাদেশের সকল ইউনিয়ন সংশ্লিষ্ট এপিআই পেতে উপরের াইউনিয়ন এপিআই ইন্ডপয়েন্ট লিংক'টি কপি করুন। এবং তা প্রয়োজনানুসারে ড্রপডাউন লিংক এপিআই হিসেবে ব্যবহার করুন।</p>
+                </div>
+                <div class="step">
+                    <h3>৬. সারসংক্ষেপে কিছু কথা</h3>
+                    <p>উপরোক্ত তথ্য উপাত্তে <span class="division">৮টি বিভাগ। </span><span class="district"> ৬৪টি জেলা</span> <span class="upzila"> ৪৯৫টি উপজেলা</span>, ও <span class="union">৪৫৭৮টি ইউনিয়ন রয়েছে</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divfooter">
+        
+        <p style="text-align:center">কপিরাইট ©<span id="yeardisplay">২০২৪</span> সহজ এপিআই।</p>
+    </div>
+        </div>  
+        <script>
+  // Check if the browser supports service workers
+  if ('serviceWorker' in navigator) {
+    // Register the service worker
+    navigator.serviceWorker.register('sw.js')
+      .then(function(registration) {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(function(error) {
+        console.log('Service Worker registration failed:', error);
+      });
+  }
+</script>
+
+<!-- Highlight.js JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Initialize Highlight.js
+        hljs.highlightAll();
+
+        // Initialize Clipboard.js
+        const clipboard = new ClipboardJS('.copy-button');
+
+        // Change button text to "Copied" when content is copied
+        clipboard.on('success', function(e) {
+            const button = e.trigger;  // Get the button that triggered the copy
+            button.innerHTML = "Copied";
+            
+            // Reset button text after 2 seconds
+            setTimeout(() => {
+                button.innerHTML = "Copy";
+            }, 2000);
+            
+            e.clearSelection();  // Clear the selection after copying
+        });
+    });
+    
+    
+</script>
+<script>
+  // প্রথম বছর স্ট্যাটিক ২০২৪
+  const staticYear = 2024;
+
+  // বর্তমান বছর বের করা
+  const currentYear = new Date().getFullYear();
+
+  // ফাংশন: ইংরেজি সংখ্যা থেকে বাংলা সংখ্যা কনভার্ট করা
+  function convertToBengaliNumber(number) {
+    const englishToBengaliDigits = {
+      '0': '০',
+      '1': '১',
+      '2': '২',
+      '3': '৩',
+      '4': '৪',
+      '5': '৫',
+      '6': '৬',
+      '7': '৭',
+      '8': '৮',
+      '9': '৯'
+    };
+
+    return number.toString().split('').map(digit => englishToBengaliDigits[digit]).join('');
+  }
+
+  // ডাইনামিক ফরম্যাট সেট করা এবং বাংলা সংখ্যা ব্যবহার করা
+  if (currentYear > staticYear) {
+    document.getElementById("yeardisplay").textContent = convertToBengaliNumber(staticYear) + " - " + convertToBengaliNumber(currentYear);
+  } else {
+    document.getElementById("yeardisplay").textContent = convertToBengaliNumber(staticYear);
+  }
+</script>
+
+
+    <script>
+        function _0x3f23(_0x588a19,_0x2d77c0){const _0x27842f=_0x422b();return _0x3f23=function(_0x1e27f2,_0x451280){_0x1e27f2=_0x1e27f2-(0x2*0x13a+0x3a1+-0x22*0x25);let _0x2b403b=_0x27842f[_0x1e27f2];return _0x2b403b;},_0x3f23(_0x588a19,_0x2d77c0);}const _0x4cf54b=_0x3f23;(function(_0x2e2573,_0x38802d){const _0x4ad696=_0x3f23,_0x2f193c=_0x2e2573();while(!![]){try{const _0x3f3bac=-parseInt(_0x4ad696(0x135))/(-0x2*-0x283+-0x77+-0x48e)+-parseInt(_0x4ad696(0x138))/(-0x33*0x12+0xbd5+-0x83d)+parseInt(_0x4ad696(0x130))/(-0x1832+0x1bf3*-0x1+0x2*0x1a14)+-parseInt(_0x4ad696(0x13a))/(-0x1cf2+-0x16d8+-0x26*-0x15d)*(-parseInt(_0x4ad696(0x13f))/(0x13aa+0x2017+-0x33bc))+-parseInt(_0x4ad696(0x131))/(0x1f96*0x1+0x6b*-0x11+-0x1875)*(parseInt(_0x4ad696(0x133))/(0x1577+-0x2*-0x313+-0x6b*0x42))+-parseInt(_0x4ad696(0x140))/(0x65*0x5+0x1974+-0x1b65*0x1)+parseInt(_0x4ad696(0x136))/(0x7*0x239+0x578+-0x14fe);if(_0x3f3bac===_0x38802d)break;else _0x2f193c['push'](_0x2f193c['shift']());}catch(_0x48ef01){_0x2f193c['push'](_0x2f193c['shift']());}}}(_0x422b,0xf7e40+0x2dd7+-0xce*0x2cf),document[_0x4cf54b(0x141)+_0x4cf54b(0x12c)](_0x4cf54b(0x13d))[_0x4cf54b(0x137)+_0x4cf54b(0x143)](_0x4cf54b(0x13c),function(){const _0x20bef7=_0x4cf54b,_0x3fa268={'vSEwW':_0x20bef7(0x12e)+_0x20bef7(0x13b),'LqfCg':function(_0xaf765f,_0x9a6f67){return _0xaf765f===_0x9a6f67;},'Docjb':_0x20bef7(0x12f),'FvFzn':function(_0x3536f1,_0x31b609){return _0x3536f1+_0x31b609;}},_0x4a45a0=document[_0x20bef7(0x141)+_0x20bef7(0x12c)](_0x3fa268[_0x20bef7(0x12d)]);_0x3fa268[_0x20bef7(0x12b)](_0x4a45a0[_0x20bef7(0x142)][_0x20bef7(0x13e)],_0x3fa268[_0x20bef7(0x139)])||_0x3fa268[_0x20bef7(0x12b)](_0x4a45a0[_0x20bef7(0x142)][_0x20bef7(0x13e)],'')?_0x4a45a0[_0x20bef7(0x142)][_0x20bef7(0x13e)]=_0x3fa268[_0x20bef7(0x134)](_0x4a45a0[_0x20bef7(0x132)+'ht'],'px'):_0x4a45a0[_0x20bef7(0x142)][_0x20bef7(0x13e)]=_0x3fa268[_0x20bef7(0x139)];}));function _0x422b(){const _0x1cf57e=['addEventLi','3043978ffFTmv','Docjb','8EnDyWu','ent','click','hamburger','maxHeight','944995IvhfCY','9485360hzuVfS','getElement','style','stener','LqfCg','ById','vSEwW','navbarCont','0px','160020atDnme','12SXETcu','scrollHeig','5956573QtWHlq','FvFzn','322510GHfvOj','46617210dZCUFt'];_0x422b=function(){return _0x1cf57e;};return _0x422b();}
+        
+        
+        document.getElementById('copyBtn1').addEventListener('click', function() {
+    copyToClipboard('link1', 'copyBtn1');
+});
+
+document.getElementById('copyBtn2').addEventListener('click', function() {
+    copyToClipboard('link2', 'copyBtn2');
+});
+
+document.getElementById('copyBtn3').addEventListener('click', function() {
+    copyToClipboard('link3', 'copyBtn3');
+});
+
+document.getElementById('copyBtn4').addEventListener('click', function() {
+    copyToClipboard('link4', 'copyBtn4');
+});
+
+
+function copyToClipboard(inputId, buttonId, statusId) {
+    var copyText = document.getElementById(inputId);
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text inside the input
+    document.execCommand("copy");
+
+    // Change the button text to "Copied"
+    var copyButton = document.getElementById(buttonId);
+    var status = document.getElementById(statusId);
+    copyButton.style.backgroundColor="#28a745";
+    copyButton.innerText = "Copied";
+
+    // Display the status text
+    
+
+    // Reset the button and status text after 2 seconds
+    setTimeout(function() {
+        copyButton.style.backgroundColor="#4D90FD";
+        copyButton.innerText = "Copy";
+        status.innerText = "";
+    }, 2000);
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+const express = require('express');
+const app = express();
+const divisions = require('./divisions.json');
+const districts = require('./districts.json');
+const upzilas = require('./upzilas.json');
+const unions = require('./unions.json');
+
+// Division to District
+app.get('/api/districts/:division_id', (req, res) => {
+    const divisionId = parseInt(req.params.division_id);
+    const filteredDistricts = districts.filter(d => d.division_id === divisionId);
+    res.json(filteredDistricts);
+});
+
+// District to Upzila
+app.get('/api/upzilas/:district_id', (req, res) => {
+    const districtId = parseInt(req.params.district_id);
+    const filteredUpzilas = upzilas.filter(u => u.district_id === districtId);
+    res.json(filteredUpzilas);
+});
+
+// Upzila to Union
+app.get('/api/unions/:upzila_id', (req, res) => {
+    const upzilaId = parseInt(req.params.upzila_id);
+    const filteredUnions = unions.filter(u => u.upzila_id === upzilaId);
+    res.json(filteredUnions);
+});
+
+// Start server
+const PORT = process.env.PORT || 8159;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});

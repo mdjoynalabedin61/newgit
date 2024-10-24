@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Developer Profile</title>
+<script src="https://kit.fontawesome.com/04a32377bf.js" crossorigin="anonymous"></script>
+     <!-- Apple icon -->
+    <link rel="apple-touch-icon" href="favicon32.png">
+    <link rel="apple-touch-icon" href="favicon32.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon180.png">
+<link rel="apple-touch-icon" sizes="167x167" href="favicon167">
+<link rel="icon" href="favicon167.png" type="image/png">
+<meta name="apple-mobile-web-app-title" content="SohojApi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+ <!-- Apple icon -->
+ <!-- Splash start -->
+ <link rel="apple-touch-startup-image" href="favicon512.png">
+ <!-- splash end -->
+ <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Sohoj API: The Easy Bangladesh Location API</title>
+
+    <meta name="description" content="Sohoj API provides a simple and efficient way to retrieve administrative divisions, districts, upazilas, and unions of Bangladesh. Designed for developers seeking an easy-to-use interface, Sohoj API delivers accurate location data with minimal effort. Perfect for applications requiring Bangladesh's geographic hierarchy.">
+    <meta name="keywords" content="SohojApi, Sohoj Api, Api Sohoj, সহজ এপিআই,conditional-form,Conditional form bd,Divisions Districts Upzila Unions conditional form">
+    <link rel="canonical" href="https://sohojapi.vercel.app" />
+<meta name="author" content="Mohammad Joynal Abedin">
+<meta name="robots" content="index, follow">
+    <!-- Facebook Open tags start here -->
+<meta property="og:title" content="Sohoj API: The Easy Bangladesh Location API" />
+<meta property="og:description" content="Sohoj API provides a simple and efficient way to retrieve administrative divisions, districts, upazilas, and unions of Bangladesh. Designed for developers seeking an easy-to-use interface, Sohoj API delivers accurate location data with minimal effort. Perfect for applications requiring Bangladesh's geographic hierarchy." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="SohojApi" />
+<meta property="article:author" content="https://www.facebook.com/joynal.abedin.9987" />
+<meta property="og:url" content="https://www.sohojapi.vercel.app" />
+<meta property="og:image" content="https://www.sohojapi.vercel.app/openmetatag.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<!-- Facebook Open tag end here -->
+<!-- Twitter Open tags start here -->
+<meta name="twitter:card" content="Sohoj API: The Easy Bangladesh Location API">
+<meta name="twitter:title" content="Sohoj API: The Easy Bangladesh Location API
+">
+<meta name="twitter:description" content="Sohoj API provides a simple and efficient way to retrieve administrative divisions, districts, upazilas, and unions of Bangladesh. Designed for developers seeking an easy-to-use interface, Sohoj API delivers accurate location data with minimal effort. Perfect for applications requiring Bangladesh's geographic hierarchy.">
+<meta name="twitter:image" content="https://www.sohojapi.vercel.com/openmetatag.jpg">
+
+
+<!-- Twitter open tags end here -->
+<link rel="manifest" href="manifest.json">
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            color: white;
+            position: sticky; /* Sticky navbar */
+            top: 0;
+            z-index: 1000; /* Ensure it overlaps content */
+        }
+        .navbar .logo img {
+            height: 40px; /* Adjust as needed */
+        }
+
+        .hamburger {
+            font-size: 30px;
+            cursor: pointer;
+            color: green;
+            font-weight: bold;
+        }
+
+        .navbar-content {
+            max-height: 0;
+            overflow: hidden;
+            background-color: white;
+            transition: max-height 0.4s ease;
+            position: fixed; /* Fixed position so it stays visible after scroll */
+            top: 50px; /* Adjust depending on the navbar height */
+            left: 0;
+            width: 100%; /* Full width */
+            z-index: 999; /* Ensures it overlaps body content */
+            font-family: SolaimanLipi;
+        }
+
+        .navbar-content ul {
+            list-style-type: none;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .navbar-content ul li {
+            padding: 10px 0;
+            
+        }
+@font-face{
+    src:url("SolaimanLipi.ttf");
+    font-family:"SolaimanLipi";
+}
+
+        .navbar-content ul li a {
+            color:black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .main-content {
+            padding: 20px;
+            margin-top: 60px; /* Adjust based on the navbar height */
+        }
+        @media (min-width: 768px) {
+            .navbar .logo {
+                margin-left: 145px; /* Resize image to 18px */
+            }
+
+            .hamburger {
+                margin-right: 145px; /* Resize hamburger icon to 18px */
+            }
+            .container{
+  max-width: 50%;
+  width: 50%;
+}
+            
+
+
+
+        }
+            
+            
+.container {
+    width: 80%;
+}
+
+.profile-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-size: 24px;
+    color: #333;
+}
+
+.title {
+    font-size: 18px;
+    color: #777;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color:#D8DCD4;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+.divfooter{
+    width: 100%;
+    height: 40px;
+    background-color:green ;
+    margin: 0 auto;
+    font-family: SolaimanLipi;
+    color: white;
+    font-weight:bold;
+}
+.demobar{
+    color: white;
+     background-color:green;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">   
+            <img src="sohojapi-logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+    </nav>
+    
+    <div class="navbar-content" id="navbarContent">
+        <ul>
+            <li><a href="index.html">হোমপেইজ</a></li>
+            <li><a href="profile.html">ডেভলপার</a></li>
+            <li><a href="demo.html" class="demobar"style="color:white">ডেমো/নমুনা</a></li>
+        </ul>
+    </div>
+    <pre>
+        
+        
+    </pre>
+    <div class="container">
+        <div class="profile-card">
+            <img src="joynal.jpg" alt="Profile Picture" class="profile-img">
+            <h1 class="name">Mohammad Joynal Abedin</h1>
+            <h3 class="title">Web Developer</h3>
+            <p class="description">Passionate about creating interactive web applications and optimizing user experiences. Always eager to learn and adapt to new technologies.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/joynal.abedin.9987" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+ 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const body = document.body;
+
+    body.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+    });
+});
+
+function _0x3f23(_0x588a19,_0x2d77c0){const _0x27842f=_0x422b();return _0x3f23=function(_0x1e27f2,_0x451280){_0x1e27f2=_0x1e27f2-(0x2*0x13a+0x3a1+-0x22*0x25);let _0x2b403b=_0x27842f[_0x1e27f2];return _0x2b403b;},_0x3f23(_0x588a19,_0x2d77c0);}const _0x4cf54b=_0x3f23;(function(_0x2e2573,_0x38802d){const _0x4ad696=_0x3f23,_0x2f193c=_0x2e2573();while(!![]){try{const _0x3f3bac=-parseInt(_0x4ad696(0x135))/(-0x2*-0x283+-0x77+-0x48e)+-parseInt(_0x4ad696(0x138))/(-0x33*0x12+0xbd5+-0x83d)+parseInt(_0x4ad696(0x130))/(-0x1832+0x1bf3*-0x1+0x2*0x1a14)+-parseInt(_0x4ad696(0x13a))/(-0x1cf2+-0x16d8+-0x26*-0x15d)*(-parseInt(_0x4ad696(0x13f))/(0x13aa+0x2017+-0x33bc))+-parseInt(_0x4ad696(0x131))/(0x1f96*0x1+0x6b*-0x11+-0x1875)*(parseInt(_0x4ad696(0x133))/(0x1577+-0x2*-0x313+-0x6b*0x42))+-parseInt(_0x4ad696(0x140))/(0x65*0x5+0x1974+-0x1b65*0x1)+parseInt(_0x4ad696(0x136))/(0x7*0x239+0x578+-0x14fe);if(_0x3f3bac===_0x38802d)break;else _0x2f193c['push'](_0x2f193c['shift']());}catch(_0x48ef01){_0x2f193c['push'](_0x2f193c['shift']());}}}(_0x422b,0xf7e40+0x2dd7+-0xce*0x2cf),document[_0x4cf54b(0x141)+_0x4cf54b(0x12c)](_0x4cf54b(0x13d))[_0x4cf54b(0x137)+_0x4cf54b(0x143)](_0x4cf54b(0x13c),function(){const _0x20bef7=_0x4cf54b,_0x3fa268={'vSEwW':_0x20bef7(0x12e)+_0x20bef7(0x13b),'LqfCg':function(_0xaf765f,_0x9a6f67){return _0xaf765f===_0x9a6f67;},'Docjb':_0x20bef7(0x12f),'FvFzn':function(_0x3536f1,_0x31b609){return _0x3536f1+_0x31b609;}},_0x4a45a0=document[_0x20bef7(0x141)+_0x20bef7(0x12c)](_0x3fa268[_0x20bef7(0x12d)]);_0x3fa268[_0x20bef7(0x12b)](_0x4a45a0[_0x20bef7(0x142)][_0x20bef7(0x13e)],_0x3fa268[_0x20bef7(0x139)])||_0x3fa268[_0x20bef7(0x12b)](_0x4a45a0[_0x20bef7(0x142)][_0x20bef7(0x13e)],'')?_0x4a45a0[_0x20bef7(0x142)][_0x20bef7(0x13e)]=_0x3fa268[_0x20bef7(0x134)](_0x4a45a0[_0x20bef7(0x132)+'ht'],'px'):_0x4a45a0[_0x20bef7(0x142)][_0x20bef7(0x13e)]=_0x3fa268[_0x20bef7(0x139)];}));function _0x422b(){const _0x1cf57e=['addEventLi','3043978ffFTmv','Docjb','8EnDyWu','ent','click','hamburger','maxHeight','944995IvhfCY','9485360hzuVfS','getElement','style','stener','LqfCg','ById','vSEwW','navbarCont','0px','160020atDnme','12SXETcu','scrollHeig','5956573QtWHlq','FvFzn','322510GHfvOj','46617210dZCUFt'];_0x422b=function(){return _0x1cf57e;};return _0x422b();}
+    </script>
+</body>
+</html>
+
+
