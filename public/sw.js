@@ -2,21 +2,21 @@
 const CACHE_NAME = "pwa-cache-v1";
 const urlsToCache = [
   "/",
-  "index.html",
-  "profile.html",
-  "demo.html",
-  "styles.css",
-  "app.js",
-  "SolaimanLipi.ttf",
-  "favicon152.png",
-  "favicon167.png",
-  "favicon180.png",
-  "favicon32.png",
-  "favicon512.png",
-  "manifest.json",
-  "sw.js",
-  "bannerbg.jpg",
-  "joynal.jpg"
+  "/index.html",
+  "/profile.html",
+  "/demo.html",
+  "/styles.css",
+  "/app.js",
+  "/SolaimanLipi.ttf",
+  "/favicon152.png",
+  "/favicon167.png",
+  "/favicon180.png",
+  "/favicon32.png",
+  "/favicon512.png",
+  "/manifest.json",
+  "/sw.js",
+  "/bannerbg.jpg",
+  "/joynal.jpg"
 ];
 
 // Install service worker and cache resources
